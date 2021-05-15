@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users
   root "donations#index"
-  resources :danations, only: :index
+  resources :donations, only: [:index, :new]
 end
